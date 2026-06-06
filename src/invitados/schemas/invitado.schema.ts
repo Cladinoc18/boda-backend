@@ -17,7 +17,7 @@ export class Invitado {
   @Prop({ required: true })
   asistira: boolean;
 
-  @Prop({ required: false, enum: ['Arroz de camarones', 'Pescado', 'Frichi'] })
+  @Prop({ required: false, enum: ['Arroz de camarones', 'Pescado', 'Frichi', 'Pechuga gratinada'] })
   comida: string; // Elección de plato principal para el invitado
 
   @Prop({ required: false, trim: true })
