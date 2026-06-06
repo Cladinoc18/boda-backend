@@ -6,7 +6,7 @@ import { CreateSongDto } from './dto/create-song.dto';
 
 @Injectable()
 export class MusicService {
-  private readonly ADMIN_PIN = 'BODAADMIN2026';
+  private readonly ADMIN_PIN = process.env.ADMIN_PIN || 'BODAADMIN';
 
   constructor(
     @InjectModel(Music.name)

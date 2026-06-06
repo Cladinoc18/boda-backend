@@ -6,8 +6,8 @@ import { CreateImageDto } from './dto/create-image.dto';
 
 @Injectable()
 export class GalleryService {
-  private readonly ADMIN_PIN = 'BODAADMIN2026';
-  private readonly GUEST_PIN = 'BODAMAYAPO2026';
+  private readonly ADMIN_PIN = process.env.ADMIN_PIN || 'BODAADMIN';
+  private readonly GUEST_PIN = process.env.GUEST_PIN || 'BODAMAYAPO';
   private readonly MAX_UPLOADS_PER_HOUR = 15;
 
   constructor(
