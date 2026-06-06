@@ -7,7 +7,7 @@ async function bootstrap() {
 
   // Habilitar CORS para permitir peticiones del frontend de Angular
   app.enableCors({
-    origin: ['http://localhost:4200', 'https://tu-boda-frontend.vercel.app'], // Orígenes permitidos (desarrollo y producción)
+    origin: ['http://localhost:4200', 'https://jacky-cristian.vercel.app', 'https://boda-frontend-wheat.vercel.app'], // Orígenes permitidos (desarrollo y producción)
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
     credentials: true,
   });
