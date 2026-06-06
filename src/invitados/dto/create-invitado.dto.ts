@@ -19,7 +19,7 @@ export class CreateInvitadoDto {
 
   @IsString({ message: 'La elección de comida debe ser un texto.' })
   @IsOptional()
-  @IsIn(['Arroz de camarones', 'Pescado', 'Frichi'], { message: 'La elección de comida debe ser Arroz de camarones, Pescado o Frichi.' })
+  @IsIn(['Arroz de camarones', 'Pescado', 'Frichi', 'Pechuga gratinada'], { message: 'La elección de comida debe ser Arroz de camarones, Pescado, Frichi o Pechuga gratinada.' })
   comida?: string;
 
   @IsString({ message: 'Las restricciones alimenticias deben ser texto.' })
